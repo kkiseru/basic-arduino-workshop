@@ -8,20 +8,18 @@
             ## Schedule
             |  Time    | Event |
             |:--------:|:------|
-            | 9:00 am  | Welcoming and briefing |
-            | 9:10 am  | Basics of general programming, Arduino programming, and robot control mechanism |
+            | 4:30 pm  | Basics of general programming and Arduino programming |
             |  -       | **Arduino coding tutorials with little turtle robot from keyestudio** |
-            | 9:40 am  | Tutorial 1: LED blinking |
-            | 10:00 am | Tutorial 2: Motor |
-            | 10:30 am | Tutorial 3: Ultrasonic sensor |
-            | 11:00 am | Tutorial 4: Infrared sensors |
-            | 12:00 pm | Lunch break |
-            | 2:30 pm  | Challenges briefing |
-            | 2:45 pm  | Try to solve the challenges! |
-            | 5:00 pm  | See you around |
+            | 4:40 pm  | Tutorial 1: LED blinking |
+            | 5:00 pm  | Tutorial 2: Motor |
+            | 5:15 pm  | Tutorial 3: Ultrasonic sensor |
+            | 5:30 pm  | Tutorial 4: Servo motor |
+            | 5:45 pm  | Challenges briefing |
+            | 5:55 pm  | Try to solve the challenges! |
+            | 6:30 pm  | See you around |
             ---
             # Welcome to Arduino Workshop
-            by Sunway University, School of Engineering and Technology
+            by Sunway Robotics Club
             ---
             ## Health & Safety
             Fire extinguishers &middot; First aid kits &middot; Exits &middot; Staircase &middot; Water &middot; Shoes
@@ -41,14 +39,12 @@
 
 |  Time    | Event |
 |:--------:|:------|
-| 9:00 am  | Welcoming and briefing |
-| 9:10 am  | Basics of general programming, Arduino programming, and robot control mechanism |
-|          | **Arduino coding tutorials with little turtle robot from keyestudio** |
-| 9:40 am  | Tutorial 1: LED blinking |
-| 10:00 am | Tutorial 2: Motor |
-| 10:30 am | Tutorial 3: Ultrasonic sensor |
-| 11:00 am | Tutorial 4: Infrared sensors |
-| 12:00 pm | Lunch break |
-| 2:30 pm  | Challenges briefing |
-| 2:45 pm  | Try to solve the challenges! |
-| 5:00 pm  | See you around |
+| 4:30 pm  | Basics of general programming and Arduino programming |
+|  -       | **Arduino coding tutorials with little turtle robot from keyestudio** |
+| 4:40 pm  | Tutorial 1: LED blinking |
+| 5:00 pm  | Tutorial 2: Motor |
+| 5:15 pm  | Tutorial 3: Ultrasonic sensor |
+| 5:30 pm  | Tutorial 4: Infrared sensors |
+| 5:45 pm  | Challenges briefing |
+| 5:55 pm  | Try to solve the challenges! |
+| 6:30 pm  | See you around |

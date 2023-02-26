@@ -13,5 +13,3 @@
     </section>
   </div>
 </div>
-
-<object data="../static/arduino-workshop-2.0-20220902.pdf" type="application/pdf" style="width:100%; height:80vh; margin-top:2ex"></object>
