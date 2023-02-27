@@ -44,7 +44,7 @@
 | 4:40 pm  | Tutorial 1: LED blinking |
 | 5:00 pm  | Tutorial 2: Motor |
 | 5:15 pm  | Tutorial 3: Ultrasonic sensor |
-| 5:30 pm  | Tutorial 4: Infrared sensors |
+| 5:30 pm  | Tutorial 4: Servo motor |
 | 5:45 pm  | Challenges briefing |
 | 5:55 pm  | Try to solve the challenges! |
 | 6:30 pm  | See you around |
