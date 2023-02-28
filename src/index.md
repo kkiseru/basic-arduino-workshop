@@ -8,14 +8,14 @@
             ## Schedule
             |  Time    | Event |
             |:--------:|:------|
-            | 4:30 pm  | Basics of general programming and Arduino programming |
+            | 4:30 pm  | Getting ready |
+            | 4:35 pm  | Basics of general programming and Arduino programming |
             |  -       | **Arduino coding tutorials with little turtle robot from keyestudio** |
-            | 4:40 pm  | Tutorial 1: LED blinking |
-            | 5:00 pm  | Tutorial 2: Motor |
-            | 5:15 pm  | Tutorial 3: Ultrasonic sensor |
-            | 5:30 pm  | Tutorial 4: Servo motor |
-            | 5:45 pm  | Challenges briefing |
-            | 5:55 pm  | Try to solve the challenges! |
+            | 4:50 pm  | Tutorial 1: LED blinking |
+            | 5:10 pm  | Tutorial 2: Motor |
+            | 5:20 pm  | Tutorial 3: Ultrasonic sensor |
+            | 5:55 pm  | Challenge briefing |
+            | 6:00 pm  | Try to solve the challenges! |
             | 6:30 pm  | See you around |
             ---
             # Welcome to Arduino Workshop
@@ -39,12 +39,12 @@
 
 |  Time    | Event |
 |:--------:|:------|
-| 4:30 pm  | Basics of general programming and Arduino programming |
+| 4:30 pm  | Getting ready |
+| 4:35 pm  | Basics of general programming and Arduino programming |
 |  -       | **Arduino coding tutorials with little turtle robot from keyestudio** |
-| 4:40 pm  | Tutorial 1: LED blinking |
-| 5:00 pm  | Tutorial 2: Motor |
-| 5:15 pm  | Tutorial 3: Ultrasonic sensor |
-| 5:30 pm  | Tutorial 4: Servo motor |
-| 5:45 pm  | Challenges briefing |
-| 5:55 pm  | Try to solve the challenges! |
+| 4:50 pm  | Tutorial 1: LED blinking |
+| 5:10 pm  | Tutorial 2: Motor |
+| 5:20 pm  | Tutorial 3: Ultrasonic sensor |
+| 5:55 pm  | Challenge briefing |
+| 6:00 pm  | Try to solve the challenges! |
 | 6:30 pm  | See you around |
