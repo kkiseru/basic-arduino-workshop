@@ -55,7 +55,7 @@ nav:
   - Tutorial 1 LED: "tutorial-led-blinking.md"
   - Tutorial 2 Motor: "tutorial-motor.md"
   - Tutorial 3 Ultrasonic sensor: "tutorial-ultrasonic-sensor.md"
-  # - Tutorial 4 Micro servo: "tutorial-micro-servo.md"
+  - Tutorial 4 Micro servo: "tutorial-micro-servo.md"
   # - Tutorial 5 Infrared sensors: "tutorial-infrared-sensor.md"
   # - Tutorial 6 LED matrix: "tutorial-led-matrix.md"
   # - Tutorial 6 Serial communication: "tutorial-serial-communication.md"
