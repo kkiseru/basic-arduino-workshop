@@ -1,4 +1,4 @@
-# Basics of programming
+# Welcome To Arduino Workshop
 
 <div class="reveal deck1">
   <div class="slides">
