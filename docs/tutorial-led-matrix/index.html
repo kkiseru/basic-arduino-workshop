@@ -160,31 +160,11 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Welcome to Arduino Workshop
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Basics
+    Basics of programming
   </span>
   
 
@@ -390,14 +370,34 @@
 <h2 id="what-is-dot-matrix">What is dot matrix?</h2>
 <p>Dot matrix is a matrix of LEDs in which the LEDs are arranged in rows and columns.</p>
 <figure>
-<p><img alt="dotmatrix" src="https://wiki.keyestudio.com/images/thumb/b/b0/Ks0364_-_connection_11.png/800px-Ks0364_-_connection_11.png" style="height:300px" />
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+  <img alt="dotmatrix" src="https://wiki.keyestudio.com/images/thumb/b/b0/Ks0364_-_connection_11.png/800px-Ks0364_-_connection_11.png" style="height:300px" />
   </p>
 <figcaption>Connection of dot matrix on the turtle robot</figcaption>
+<p>=======
+  <img alt="dotmatrix" src="https://wiki.keyestudio.com/images/thumb/b/b0/Ks0364_-connection_11.png/800px-Ks0364-_connection_11.png" style="height:300px" />
+    <p style="text-align: center;">Connection of dot matrix on the turtle robot</p></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>f0e5d95e7252cafd0009fd2b6c30ba4fb767e43c</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 </figure>
 <h2 id="control-led-matrix">Control LED matrix</h2>
 <ol>
 <li>
-<p>Install the Adafruit LED backpack library</p>
+<p>Install the Adafruit LED backpack library
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <p>Sketch &gt; Include Library &gt; Manage Libraries...</p>
 <p>Search for "adafruit led" &gt; Install "Adafruit LED Backpack Library" &gt; Install all libraries</p>
 </li>
@@ -517,7 +517,7 @@
 <a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a><span class="p">}</span>
 </code></pre></div>
 <p>Then in the <code>loop</code> function, we can call the functions to display the patterns on the dot matrix.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<h1 id="void-loop-dm_forward-delay1500-dm_backward-delay1500-dm_left-delay1500-dm_right-delay1500"><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">dm_forward</span><span class="p">();</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="n">dm_backward</span><span class="p">();</span>
@@ -527,9 +527,145 @@
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="n">dm_right</span><span class="p">();</span>
 <a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
 <a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">}</span>
+</code></pre></div></h1>
+<div class="highlight"><pre><span></span><code>Sketch &gt; Include Library &gt; Manage Libraries...
+Search for &quot;adafruit led&quot; &gt; Install &quot;Adafruit LED Backpack Library&quot; &gt; Install all libraries
+</code></pre></div>
+</li>
+<li>
+<p>Include the necessary libraries in the code and create an object to control the dot matrix.</p>
+<div class="highlight"><pre><span></span><code>#include &lt;Wire.h&gt;
+#include &quot;Adafruit_LEDBackpack.h&quot;   
+#include &quot;Adafruit_GFX.h&quot;
+Adafruit_LEDBackpack matrix = Adafruit_LEDBackpack();
+</code></pre></div>
+</li>
+<li>
+<p>Initialise the dot matrix by notify the address of the dot matrix.</p>
+<div class="highlight"><pre><span></span><code>   void setup() {
+   matrix.begin(0x70);
+   }
+</code></pre></div>
+</li>
+<li>
+<p>The dot matrix is controlled with the displaybuffer array. Each item in the array represents a column counting from right to left starting from 0.</p>
+<p>We use binary code for each item in the array with 1 being on and 0 being off for the LEDs. To set the middle two columns to light up, we will have to send the display pattern to the dot matrix</p>
+<div class="highlight"><pre><span></span><code>   void loop() {
+   matrix.displaybuffer[0] = B00000000;
+   matrix.displaybuffer[1] = B00000000;
+   matrix.displaybuffer[2] = B00000000;
+   matrix.displaybuffer[3] = B11111111;
+   matrix.displaybuffer[4] = B11111111;
+   matrix.displaybuffer[5] = B00000000;
+   matrix.displaybuffer[6] = B00000000;
+   matrix.displaybuffer[7] = B00000000;
+   matrix.writeDisplay(); //(1)
+   }
+</code></pre></div>
+</li>
+<li>
+<p>We can create different patterns as custom functions. With this we can directly call the function if we want a certain pattern to show on the dot matrix.</p>
+<p><strong>!!! Info</strong>
+   These functions should be declared outside the setup and loop functions.</p>
+<div class="highlight"><pre><span></span><code>   void dm_startup() {
+   matrix.displaybuffer[0] = B00000011;
+   matrix.displaybuffer[1] = B10000000;
+   matrix.displaybuffer[2] = B00010011;
+   matrix.displaybuffer[3] = B00100000;
+   matrix.displaybuffer[4] = B00100000;
+   matrix.displaybuffer[5] = B00010011;
+   matrix.displaybuffer[6] = B10000000;
+   matrix.displaybuffer[7] = B00000011;
+   matrix.writeDisplay();
+   }
+   void dm_forward()
+   {
+   matrix.displaybuffer[3] = B11111111;     
+   matrix.displaybuffer[4] = B11111111;
+   matrix.displaybuffer[2] = B00000001;
+   matrix.displaybuffer[1] = B00000010;
+   matrix.displaybuffer[0] = B00000100;
+   matrix.displaybuffer[5] = B00000001;
+   matrix.displaybuffer[6] = B00000010;
+   matrix.displaybuffer[7] = B00000100;
+   matrix.writeDisplay();
+   }
+   void dm_backward()
+   {
+   matrix.displaybuffer[3] = B11111111;
+   matrix.displaybuffer[4] = B11111111;
+   matrix.displaybuffer[2] = B00100000;
+   matrix.displaybuffer[1] = B00010000;
+   matrix.displaybuffer[0] = B00001000;
+   matrix.displaybuffer[5] = B00100000;
+   matrix.displaybuffer[6] = B00010000;
+   matrix.displaybuffer[7] = B00001000;
+   matrix.writeDisplay();
+   }
+   void dm_right()
+   {
+   for(int i=0;i&lt;8;i++)
+   {
+   matrix.displaybuffer[i] = B00001100;
+   }
+   matrix.displaybuffer[6] = B00011110;
+   matrix.displaybuffer[5] = B00101101;
+   matrix.displaybuffer[4] = B11001100;
+   matrix.writeDisplay();
+   }
+   void dm_left()
+   {
+   for(int i=0;i&lt;8;i++)
+   {
+   matrix.displaybuffer[i] = B00001100;
+   }
+   matrix.displaybuffer[1] = B00011110;
+   matrix.displaybuffer[2] = B00101101;
+   matrix.displaybuffer[3] = B11001100;
+   matrix.writeDisplay();
+   }
+   void dm_stop()
+   {
+   matrix.displaybuffer[0] = B11000000;
+   matrix.displaybuffer[1] = B00100001;
+   matrix.displaybuffer[2] = B00010010;
+   matrix.displaybuffer[3] = B00001100;
+   matrix.displaybuffer[4] = B00001100;
+   matrix.displaybuffer[5] = B00010010;
+   matrix.displaybuffer[6] = B00100001;
+   matrix.displaybuffer[7] = B11000000;
+   matrix.writeDisplay();
+   }
 </code></pre></div>
 </li>
 </ol>
+<p>Then in the loop function, we can call the functions to display the patterns on the dot matrix.</p>
+<div class="highlight"><pre><span></span><code>    void loop() {
+        dm_forward();
+        delay(1500);
+        dm_backward();
+        delay(1500);
+        dm_left();
+        delay(1500);
+        dm_right();
+        delay(1500);
+    }
+</code></pre></div>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>f0e5d95e7252cafd0009fd2b6c30ba4fb767e43c</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <h1 id="bring-it-further">Bring it further</h1>
 <ol>
 <li>How can we display an animation of arrow moving?</li>

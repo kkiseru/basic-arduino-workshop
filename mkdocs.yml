@@ -50,8 +50,8 @@ extra:
       name: Sunway Robotics Club
 copyright: Prepared for Sunway Robotics Club
 nav:
-  - index.md
-  - Basics: "basics.md"
+  # - index.md
+  - basics.md
   - Tutorial 1 LED: "tutorial-led-blinking.md"
   - Tutorial 2 Motor: "tutorial-motor.md"
   - Tutorial 3 Ultrasonic sensor: "tutorial-ultrasonic-sensor.md"

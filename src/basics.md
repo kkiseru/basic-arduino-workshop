@@ -7,6 +7,23 @@
         # Welcome to Robotic Workshop
         by Sunway Robotics Club
         ---
+        ## Schedule
+        |  Time    | Event |
+        |:--------:|:------|
+        | 4:00 pm  | Start Workshop |
+        | 4:10 pm  | Basics of general programming and Arduino programming |
+        |  -       | Arduino coding tutorials with little turtle robot from keyestudio |
+        | 4:20 pm  | Tutorial 1: LED blinking |
+        | 4:35 pm  | Tutorial 2: Motor |
+        | 4:50 pm  | Tutorial 3: Ultrasonic sensor |
+        | 5:05 pm  | Tutorial 4: Servo |
+        | 5:05 pm  | Challenge Briefing |
+        | 5.10 pm  | Try to solve the challenges! |
+        | 6:15 pm  | Workshop Ends ! + Photography Session |
+        ---
+        ## Introduction
+        We will be using the little turtle robot from keyestudio with Arduino programming<br>
+        ![keyestudio robot](https://wiki.keyestudio.com/images/2/25/%E5%9B%BE%E7%89%871_-_ks0364.png){ style="height:300px" }
         # Basics of programming
         ---
         # What is Programming?
