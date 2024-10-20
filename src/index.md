@@ -36,7 +36,7 @@
         <kbd>F</kbd> for fullscreen &middot;
         <kbd>O</kbd> for overview
 
-## Schedule
+<!-- ## Schedule
 
 |  Time    | Event |
 |:--------:|:------|
@@ -48,4 +48,4 @@
 | 5:20 pm  | Tutorial 3: Ultrasonic sensor |
 | 5:55 pm  | Challenge briefing |
 | 6:00 pm  | Try to solve the challenges! |
-| 6:30 pm  | See you around |
+| 6:30 pm  | See you around | -->
