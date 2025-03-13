@@ -1,4 +1,4 @@
-# Blinking an LED
+# Section 1: Leg Assembly and Calibration 
 
 ??? abstract "Slides"
     <div class="reveal deck1">
@@ -210,26 +210,21 @@
 </figure>
 
 
-## Make LED blink
-
+## Libraries and Initialisation
 ```c++ linenums="1"
-int ledpin=11;                 //(1)
-void setup() {
-  pinMode(ledpin, OUTPUT);     //(2)
-}
-void loop() {
-  digitalWrite(ledpin, HIGH);  //(3)
-  delay(1000);                 //(5)
-  digitalWrite(ledpin, LOW);   //(4)
-  delay(1000);
-}
+#include <Arduino.h>                 //(1)
+#include <Wire.h>    //(2)
+#include <SoftwareSerial.h> //(3)
+#inlcude <EEPROM.h>                 //(5)
+#include <Otto.h>   //(4)
+Otto Otto; //(5)
 ```
 
-1. Define a variable `ledpin` to be `11`
+1. This is the core of Arduino Library which provides the basic commands for Arduino Programming
 2. Initialize the `ledpin` as output
-3. By sending the HIGH signal, we are giving the LED a high voltage level. Typically for microcontroller, this is 3.3V or 5V.
-4. The LOW signal gives the LED a low voltage level, which is close or equal to 0V.
-5. Time delay between two commands. The time is defined with the unit of milliseconds.
+3. Allows for serial communication using arbitrary digital pins (pins 6 and 7 are used for RX and TX in this case).
+4. Otto Lib+rary
+5. This is Otto !
 
 ## Verify and upload the program to the Arduino Uno (the microcontroller of the robot)
 

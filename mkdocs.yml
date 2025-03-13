@@ -1,4 +1,4 @@
-site_name: Basic Arduino Workshop
+site_name: OttoBot Workshop
 theme:
   name: material
   icon: 
@@ -51,9 +51,9 @@ extra:
 copyright: Prepared for Sunway Robotics Club
 nav:
   # - index.md
-  - basics.md
-  - Tutorial 1 LED: "tutorial-led-blinking.md"
-  - Tutorial 2 Motor: "tutorial-motor.md"
+  - index.md
+  - Tutorial 1 Assembly: "tutorial-assembly.md"
+  - Tutorial 2 Programming: "tutorial-led-blinking.md"
   - Tutorial 3 Ultrasonic sensor: "tutorial-ultrasonic-sensor.md"
   - Tutorial 4 Micro servo: "tutorial-micro-servo.md"
   # - Tutorial 5 Infrared sensors: "tutorial-infrared-sensor.md"
